@@ -1,12 +1,5 @@
 def lz77_compress(text, sb_size=11, lab_size=11):
-    """
-    Compresses text using LZ77 sliding window compression.
 
-    :param text: Input string
-    :param sb_size: Search Buffer size (limits lookback offset)
-    :param lab_size: Look-Ahead Buffer size (limits max match length)
-    :return: List of tuples (offset, length, next_symbol)
-    """
     compressed = []
     i = 0
     n = len(text)
@@ -49,15 +42,15 @@ def lz77_compress(text, sb_size=11, lab_size=11):
     return compressed
 
 
-# Input text (22 characters)
+
 text = "CABRACADABRARRARRAD"
 
-# Test combinations of (Search Buffer, Look-Ahead Buffer)
+
 combinations = [
-    (2, 5),  # Small Search Buffer & Small Look-Ahead Buffer
-    (3, 8),  # Moderate Search Buffer & Moderate Look-Ahead Buffer
-    (7, 6),  # Slide baseline configuration
-    (20, 20)  # Large buffers (unconstrained)
+    (2, 5),
+    (3, 8),
+    (7, 6),
+    (20, 20)
 ]
 
 for sb, lab in combinations:
