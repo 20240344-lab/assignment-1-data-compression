@@ -29,7 +29,7 @@ def lz77_compress(text, sb_size=11, lab_size=11):
             compressed.append((best_offset, best_length, "NULL"))
             break
 
-        # Case 2: Cap match length if it fills the LAB (reserve 1 slot for next_symbol)
+        # Case 2: Cap match length if it fills the LAB (reserve 1 slot for next_symbol
         if best_length >= lab_size:
             best_length = lab_size - 1
 
