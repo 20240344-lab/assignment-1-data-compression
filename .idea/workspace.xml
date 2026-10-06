@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b47e237-e6ec-4a5b-a26e-abee012f9d86" name="Changes" comment="the LZ77 project born">
+    <list default="true" id="6b47e237-e6ec-4a5b-a26e-abee012f9d86" name="Changes" comment="compress file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LZ77 PROJECT.py" beforeDir="false" afterPath="$PROJECT_DIR$/LZ77 PROJECT.py" afterDir="false" />
     </list>
@@ -82,7 +82,7 @@
       <updated>1790616255518</updated>
       <workItem from="1790616256462" duration="1445000" />
       <workItem from="1790951169346" duration="4337000" />
-      <workItem from="1791315260458" duration="658000" />
+      <workItem from="1791315260458" duration="1212000" />
     </task>
     <task id="LOCAL-00001" summary="the LZ77 project born">
       <option name="closed" value="true" />
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790617083882</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="compress file">
+      <option name="closed" value="true" />
+      <created>1791316566170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1791316566170</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,9 +124,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the LZ77 project born" />
-    <option name="LAST_COMMIT_MESSAGE" value="the LZ77 project born" />
+    <MESSAGE value="compress file" />
+    <option name="LAST_COMMIT_MESSAGE" value="compress file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject$LZ77_PROJECT.coverage" NAME="LZ77 PROJECT Coverage Results" MODIFIED="1790954349270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$LZ77_PROJECT.coverage" NAME="LZ77 PROJECT Coverage Results" MODIFIED="1791315943865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
