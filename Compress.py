@@ -1,4 +1,4 @@
-def lz77_compress(text, sb_size=11, lab_size=11):
+def lz77_compress(text, sb_size=None, lab_size=None):
 
     compressed = []
     i = 0
