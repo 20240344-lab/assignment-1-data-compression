@@ -41,6 +41,15 @@ def lz77_compress(text, sb_size=None, lab_size=None):
 
     return compressed
 
+def lz77_decompress(compressed):
+    output = ""
+    for offset, length, char in compressed:
+        startPosition = len(output) - offset
+        for k in range(length):
+            output += output[startPosition + k]
+        if char != "NULL":
+            output += char
+    return output 
 
 
 text = "CABRACADABRARRARRAD"
@@ -57,3 +66,9 @@ for sb, lab in combinations:
     result = lz77_compress(text, sb_size=sb, lab_size=lab)
     output_str = ", ".join([f"<{o},{l},{c}>" for o, l, c in result])
     print(f"SB = {sb:2d} | LAB = {lab:2d} -> [{output_str}]")
+
+    decompressed = lz77_decompress(result)
+    print(f"Original Text: {text}")
+    print(f"Decompressed: {decompressed}")
+    print(decompressed == text)
+    print("---------------------------------")
